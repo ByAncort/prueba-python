@@ -47,7 +47,7 @@ def valorAlto():
 def ivaBajo():
     valores= a.leer_archivo_json("valores.json")
     val= min(valores, key=lambda x : x["iva"])
-    print("el iva mas bajo es : ",val)
+    print(f"el iva mas bajo es : {val['nombre']} ${val['valor']}")
 def mean():
     valores= a.leer_archivo_json("valores.json")
     valor=[]
