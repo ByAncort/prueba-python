@@ -53,13 +53,13 @@ def mean():
     valor=[]
     for i in valores:
         valor.append(i["valor"])
-    print("el promedio es: ",s.mean(valor))
+    print("el promedio es: ",math.trunc(s.mean(valor)))
 def geometric_mean():
     valores= a.leer_archivo_json("valores.json")
     valor=[]
     for i in valores:
         valor.append(i["valor"])
-    print("la media geometrica es : ",s.geometric_mean(valor))
+    print("la media geometrica es : ",math.trunc(s.geometric_mean(valor)))
 
 
 # cargarPord()
